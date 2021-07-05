@@ -1,0 +1,61 @@
+* {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+#removebutton {
+    background-color: lawngreen;
+}
+
+#wrapper {
+    border: 2px solid black;
+    width: 350px;
+    margin: auto;
+    padding: 10px 10px 40px 10px;
+    border-radius: 20px;
+    position: relative;
+    top: 50px;
+    background: linear-gradient(to right, #9796f0, #fbc7d4);
+}
+
+#button, #reset{
+    border-radius: 30px;
+    color: rgb(208, 51, 255 );
+    border-color: 2px solid black;  
+    height: 24px;
+    margin: 3px;
+}
+
+button:hover {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.list-item {
+    margin: 12px;
+    margin-left: 25px;
+    text-align: left;
+    border: 2px solid black;
+    padding-left : 8px;
+    line-height: 24px;
+    border-radius: 10px;
+}
+
+.rbutton {
+    position: absolute;
+    right: 25px;
+    height: 23px;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: rgb(208, 51, 255 );
+    font-weight: bolder;
+}
+
+#input {
+    height: 32px;
+    width: 200px;
+    border-radius: 14px;
+}
