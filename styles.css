@@ -59,3 +59,15 @@ button:hover {
     width: 200px;
     border-radius: 14px;
 }
+
+.item_input {
+    background: transparent;
+    border: 1px solid black;
+    font: bold;
+    margin-left: 5px;
+    color: black;
+}
+
+#OK {
+    display: none;
+}
