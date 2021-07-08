@@ -68,6 +68,6 @@ button:hover {
     color: black;
 }
 
-#OK {
+.OK {
     display: none;
 }

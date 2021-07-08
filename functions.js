@@ -2,7 +2,7 @@
 
 const buttonclick = document.getElementById('button');
 const list = document.getElementById('lists');
-const OK = "<button id = 'OK'>Save</button>";
+const OK = "<button class = 'OK'>Save</button>";
 const listItem_EditBtn = "<button class = 'listItemEditBtn'>Edit</button>";
 
 const clickhandler = () => {
@@ -54,21 +54,23 @@ const clickhandler = () => {
         }
 
         // adding eventhandler to OK button
-        document.getElementById('OK').addEventListener('click', function(){
-            this.nextElementSibling.defaultValue = this.nextElementSibling.value;
-            this.style.display = 'none';
-            this.previousSibling.style.display = 'inline-block';
-            this.nextElementSibling.disabled = true;
-        })
+        let saveBtnHandler = document.getElementsByClassName('OK');
+        for(let l of saveBtnHandler){
+            l.addEventListener('click', function(){
+                this.nextElementSibling.defaultValue = this.nextElementSibling.value;
+                this.style.display = 'none';
+                this.previousSibling.style.display = 'inline-block';
+                this.nextElementSibling.disabled = true;
+            })
+            }
+        }
         }  
-}
 
 
 // Handler for Reset button
 document.getElementById('reset').addEventListener('click', function(){
     list.innerText = ''
 })
-
 
 buttonclick.addEventListener('click', clickhandler);
 
